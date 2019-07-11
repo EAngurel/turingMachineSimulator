@@ -25,9 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         machine.cpp \
-    codeeditor.cpp
+    codeeditor.cpp \
+    graphwidget.cpp \
+    node.cpp
 
 HEADERS  += machine.h \
-    codeeditor.h
+    codeeditor.h \
+    graphwidget.h \
+    node.h
 
 FORMS    += machine.ui
