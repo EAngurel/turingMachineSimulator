@@ -15,10 +15,10 @@ public:
 
     void itemMoved();
 
-public slots:
-    void shuffle();
-    void zoomIn();
-    void zoomOut();
+//public slots:
+//    void shuffle();
+//    void zoomIn();
+//    void zoomOut();
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;

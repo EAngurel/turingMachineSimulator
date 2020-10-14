@@ -1,0 +1,38 @@
+##########Tokens##########
+id  
+()
+->
+,
+comentario de una linea y multilinea estilo C
+_EF    #Palabra clave para estado final
+{}
+;
+
+
+##########Gramática######## Parser LL1
+P -> S P
+S -> _EF {IDS} ;
+S -> (id,id) -> (id,id,id) ;
+S -> ;
+
+lookahead()
+match()
+
+P(){
+ S();
+ P();
+}
+
+S(){
+ if (lookahead() es _EF){
+   //
+ } else ...
+
+}
+
+
+
+########## EDA ############
+map<Configuracion, Moviento> MT;
+Configuracion = struct {string estado; string caracter; }
+Movimiento = 

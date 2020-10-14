@@ -16,7 +16,7 @@ class LineNumberArea;
 
 class CodeEditor : public QPlainTextEdit
 {
-    Q_OBJECT
+    Q_OBJECT;
 
 public:
     CodeEditor(QWidget *parent = 0);
@@ -47,6 +47,7 @@ public:
     QSize sizeHint() const override {
         return QSize(codeEditor->lineNumberAreaWidth(), 0);
     }
+    void paintLine(int);
 
 protected:
     void paintEvent(QPaintEvent *event) override {

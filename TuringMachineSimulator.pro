@@ -26,12 +26,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         machine.cpp \
     codeeditor.cpp \
-    graphwidget.cpp \
-    node.cpp
+    lexer.cpp \
+    parser.cpp \
+    token.cpp \
+    Config.cpp \
+    Mov.cpp \
+    erros.cpp \
+    playercontroller.cpp
 
 HEADERS  += machine.h \
     codeeditor.h \
-    graphwidget.h \
-    node.h
+    constants.h \
+    lexer.h \
+    parser.h \
+    token.h \
+    Config.h \
+    erros.h \
+    Mov.h \
+    playercontroller.h
 
-FORMS    += machine.ui
+FORMS  += machine.ui
+RC_ICONS = Tms.ico
+
+DISTFILES += \
+    3.png
+
+RESOURCES += \
+    recursos.qrc
+
